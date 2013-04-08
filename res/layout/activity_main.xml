@@ -8,19 +8,40 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:text="Start Service"
-        android:onClick="Start" />
+        android:layout_marginLeft="28dp"
+        android:onClick="Start"
+        android:text="Start Service" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button1"
         android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
-        android:text="Stop Service"
-        android:onClick="Stop" />
+        android:layout_marginTop="32dp"
+        android:onClick="Stop"
+        android:text="Stop Service" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/button1"
+        android:onClick = "startThread"
+        android:text="Start Thread" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignLeft="@+id/button3"
+        android:onClick = "stopThread"
+        android:text="Stop Thread" />
 
 </RelativeLayout>
